@@ -2,7 +2,7 @@ import { CaseStudy } from "./types";
 
 export const caseStudies: CaseStudy[] = [
   {
-    slug: "diagnoverse",
+    slug: "diagnoverse-ai",
     hero: {
       title: "DiagnoVerse AI",
       oneLiner: "An AI-powered full-stack health platform delivering conversational diagnostic support and auto-saving medical records for rural communities.",
@@ -42,7 +42,7 @@ export const caseStudies: CaseStudy[] = [
     learnings: "Gained advanced practical experience in building and deploying LLM-powered applications, orchestrating AI workflows in Google Antigravity, and designing user-centric full-stack healthcare tools for low-resource environments.",
   },
   {
-    slug: "tradetrack",
+    slug: "trade-track",
     hero: {
       title: "TradeTrack",
       oneLiner: "A comprehensive business dashboard designed to help small businesses manage revenue, track expenses, and monitor inventory, replacing clunky spreadsheet workflows.",
