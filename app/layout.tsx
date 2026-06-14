@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     siteName: "Krrish Dewangan Portfolio",
     images: [
       {
-        url: "/opengraph-image.png",
+        url: "https://krrish-portfolio-six.vercel.app/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "Krrish Dewangan - Full-Stack Developer Portfolio",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Krrish Dewangan | Full-Stack Developer",
     description: "Full-Stack Developer, UI/UX Designer, and Generative AI Builder.",
-    images: ["/opengraph-image.png"],
+    images: ["https://krrish-portfolio-six.vercel.app/opengraph-image.png"],
   },
 };
 
