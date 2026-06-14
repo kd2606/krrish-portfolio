@@ -100,6 +100,8 @@ export const clubs: Club[] = [
     since: "Active since March 2026",
     bullets: [
       "Contributing to technical workshops, coding sessions, and chapter events to grow the developer community on campus.",
+      "Supporting chapter operations and driving peer learning initiatives within the on-campus GFG community.",
+      "Bridging the gap between classroom learning and real-world technical skills for fellow students.",
     ],
   },
 ];
