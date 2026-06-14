@@ -444,8 +444,8 @@ export const recognitions: Recognition[] = [
     organization: "Google",
   },
   {
-    id: "algostorm-winner",
-    name: "AlgoStorm 1.0 Winner",
+    id: "algostorm-participant",
+    name: "Team Lead / Participant — Algostorm 1.0",
     organization: "Codician Club",
   },
   {
