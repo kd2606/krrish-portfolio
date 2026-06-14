@@ -163,7 +163,7 @@ export default function Hero() {
 
       {/* ── Stats Strip ── */}
       <div
-        className="lg:absolute lg:bottom-12 lg:left-1/2 lg:-translate-x-1/2 relative mt-16 lg:mt-0 flex flex-wrap justify-center z-[2]"
+        className="relative mt-24 flex flex-wrap justify-center z-[2]"
         style={{
           opacity: 0,
           animation: `fadeUp 0.7s 0.75s ${ease} forwards`,
