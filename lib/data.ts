@@ -13,6 +13,7 @@ import type {
   Club,
   Certification,
   SocialLink,
+  Recognition,
 } from "./types";
 
 // ── Navigation ──────────────────────────────────────────────
