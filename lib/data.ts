@@ -446,9 +446,9 @@ export const recognitions: Recognition[] = [
     organization: "Google",
   },
   {
-    id: "algostorm-participant",
-    name: "Team Lead / Participant — Algostorm 1.0",
-    organization: "Codician Club",
+    id: "innovation-day-2025",
+    name: "3rd Position — Paper Presentation · Innovation Day 2025",
+    organization: "Certificate of Excellence · Team HackBoard · Amity University CG · Oct 8, 2025",
   },
   {
     id: "ideathon-participant",
