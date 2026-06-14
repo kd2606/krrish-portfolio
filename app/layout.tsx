@@ -28,6 +28,7 @@ const martian = Martian_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://krrish-portfolio-six.vercel.app"),
   title: "Krrish Dewangan | Full-Stack Developer & UI/UX Designer",
   description: "Portfolio of Krrish Dewangan, a Full-Stack Developer, UI/UX Designer, and Generative AI Builder based in Raipur. Building scalable digital products and intelligent systems.",
   keywords: ["Krrish Dewangan", "Full-Stack Developer", "UI/UX Designer", "Generative AI", "Next.js", "React", "Portfolio", "Amity University"],
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://your-future-domain.com", // We will update this after Vercel deployment
+    url: "https://krrish-portfolio-six.vercel.app",
     title: "Krrish Dewangan | Interstellar Developer",
     description: "Exploring the intersection of design, engineering, and artificial intelligence. View my projects, case studies, and architecture.",
     siteName: "Krrish Dewangan Portfolio",
