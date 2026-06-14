@@ -1,5 +1,6 @@
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import { projects } from "@/lib/data";
+import Link from "next/link";
 
 // Pre-calculated bento grid spans to match the original design variations
 const gridSpans = [
@@ -97,10 +98,18 @@ export default function Projects() {
                             href={project.liveUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="px-4 h-10 rounded-full bg-white text-black flex items-center justify-center text-[0.8rem] font-bold hover:bg-white/90 transition-colors"
+                            className="px-4 h-10 rounded-full bg-white text-black flex items-center justify-center text-[0.8rem] font-bold hover:bg-white/90 transition-colors shrink-0"
                           >
                             Live ↗
                           </a>
+                        )}
+                        {project.slug && (
+                          <Link
+                            href={`/case-study/${project.slug}`}
+                            className="px-4 h-10 rounded-full bg-apple-blue/10 border border-apple-blue/20 text-apple-blue flex items-center justify-center text-[0.8rem] font-medium hover:bg-apple-blue/20 transition-colors shrink-0"
+                          >
+                            Case Study →
+                          </Link>
                         )}
                       </div>
                     )}

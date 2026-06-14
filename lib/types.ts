@@ -72,3 +72,38 @@ export interface Recognition {
   name: string;
   organization: string;
 }
+
+export interface CaseStudy {
+  slug: string;
+  hero: {
+    title: string;
+    oneLiner: string;
+    techStack: string[];
+  };
+  overview: string;
+  myRole: {
+    role: string;
+    scope: string;
+  };
+  research: {
+    painPoints: string;
+    marketGap: string;
+  };
+  architecture: {
+    tech: string;
+    reasoning: string;
+  };
+  keyFeatures: {
+    title: string;
+    description: string;
+  }[];
+  challenges: {
+    bottleneck: string;
+    fix: string;
+  };
+  results: {
+    description: string;
+    liveUrl?: string;
+  };
+  learnings: string;
+}
