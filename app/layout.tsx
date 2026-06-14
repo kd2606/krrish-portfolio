@@ -38,12 +38,12 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://krrish-portfolio-six.vercel.app",
-    title: "Krrish Dewangan | Interstellar Developer",
+    title: "Krrish Dewangan | Full-Stack Developer",
     description: "Exploring the intersection of design, engineering, and artificial intelligence. View my projects, case studies, and architecture.",
     siteName: "Krrish Dewangan Portfolio",
     images: [
       {
-        url: "/opengraph-image.png", // Next.js will auto-detect this in the app/ directory
+        url: "/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "Krrish Dewangan - Full-Stack Developer Portfolio",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Krrish Dewangan | Interstellar Developer",
+    title: "Krrish Dewangan | Full-Stack Developer",
     description: "Full-Stack Developer, UI/UX Designer, and Generative AI Builder.",
     images: ["/opengraph-image.png"],
   },
