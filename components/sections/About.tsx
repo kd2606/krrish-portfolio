@@ -34,7 +34,7 @@ export default function About() {
             {aboutData.paragraphs.map((p, i) => (
               <p
                 key={i}
-                className="text-[1rem] text-gray-1 leading-[1.85] mb-5 font-light [&_strong]:text-white/90 [&_strong]:font-medium"
+                className="text-[1.05rem] text-white/75 leading-[1.85] mb-5 font-light [&_strong]:text-white [&_strong]:font-medium"
                 dangerouslySetInnerHTML={{ __html: p }}
               />
             ))}
