@@ -9,8 +9,9 @@ export function generateStaticParams() {
   }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const caseStudy = caseStudies.find((cs) => cs.slug === params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const caseStudy = caseStudies.find((cs) => cs.slug === slug);
   if (!caseStudy) return { title: "Not Found" };
   return {
     title: `${caseStudy.hero.title} — Case Study | Krrish Dewangan`,
@@ -18,8 +19,9 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   };
 }
 
-export default function CaseStudyPage({ params }: { params: { slug: string } }) {
-  const caseStudy = caseStudies.find((cs) => cs.slug === params.slug);
+export default async function CaseStudyPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const caseStudy = caseStudies.find((cs) => cs.slug === slug);
 
   if (!caseStudy) {
     notFound();
