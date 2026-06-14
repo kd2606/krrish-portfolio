@@ -76,8 +76,8 @@ export default function Projects() {
                         </span>
                       </div>
                     ) : (
-                      <div className="flex gap-3">
-                        {project.githubUrl && (
+                      <div className="flex gap-3 items-center">
+                        {project.githubUrl ? (
                           <a
                             href={project.githubUrl}
                             target="_blank"
@@ -87,6 +87,10 @@ export default function Projects() {
                           >
                             <span className="font-mono text-sm">⌥</span>
                           </a>
+                        ) : (
+                          <span className="px-3 h-8 rounded-full bg-white/[0.03] border border-white/10 flex items-center justify-center text-white/50 text-[0.7rem] font-mono">
+                            🔒 Private Repo
+                          </span>
                         )}
                         {project.liveUrl && (
                           <a

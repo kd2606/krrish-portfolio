@@ -63,5 +63,12 @@ export interface Certification {
 export interface SocialLink {
   label: string;
   href: string;
-  icon: string;
+  icon?: string;
+  external?: boolean;
+}
+
+export interface Recognition {
+  id: string;
+  name: string;
+  organization: string;
 }

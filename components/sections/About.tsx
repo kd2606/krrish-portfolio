@@ -67,6 +67,21 @@ export default function About() {
                 {aboutData.education.year}
               </div>
             </div>
+
+            {/* GitHub Activity */}
+            <div className="mt-6 p-6 bg-white/[0.04] border border-white/10 rounded-2xl overflow-hidden">
+              <p className="font-mono text-[0.65rem] tracking-[0.18em] uppercase text-apple-blue mb-4">
+                GitHub Activity
+              </p>
+              <div className="w-full overflow-x-auto pb-2">
+                <img
+                  src="https://ghchart.rshah.org/kd2606"
+                  alt="GitHub Contribution Activity"
+                  className="min-w-[600px] w-full opacity-80 hover:opacity-100 transition-opacity"
+                  style={{ filter: "drop-shadow(0 0 10px rgba(255,255,255,0.1))" }}
+                />
+              </div>
+            </div>
           </ScrollReveal>
         </div>
       </div>

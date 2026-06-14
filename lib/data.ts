@@ -30,6 +30,7 @@ export const heroData = {
   badge: "Available for internships & collaborations",
   firstName: "Krrish",
   lastName: "Dewangan",
+  currentlyBuilding: "🚀 Currently Building: DiagnoVerse AI + TradeTrack",
   subtitle: {
     highlights: ["UI/UX & Full-Stack Developer"],
     text: "Generative AI Builder · Google Student Ambassador '26 · Student Leader at",
@@ -65,7 +66,6 @@ export const aboutData = {
   contactPills: [
     { icon: "✉", text: "dewangankrrish50@gmail.com" },
     { icon: "📍", text: "Raipur, CG" },
-    { icon: "☎", text: "8817975718" },
   ],
   education: {
     degree: "B.Tech — Computer Science & Engineering",
@@ -99,8 +99,6 @@ export const clubs: Club[] = [
     since: "Active since March 2026",
     bullets: [
       "Contributing to technical workshops, coding sessions, and chapter events to grow the developer community on campus.",
-      "Supporting chapter operations and driving peer learning initiatives within the on-campus GFG community.",
-      "Bridging the gap between classroom learning and real-world technical skills for fellow students.",
     ],
   },
 ];
@@ -233,14 +231,13 @@ export const experiences: Experience[] = [
   },
 ];
 
-// ── Projects ────────────────────────────────────────────────
 export const projects: Project[] = [
   {
     id: "diagnoverse-ai",
     slug: "diagnoverse-ai",
     title: "DiagnoVerse AI",
     category: "Health Tech · NHIDE-2026",
-    description: "A full-stack rural health accessibility platform designed to bridge the medical gap in remote areas. It features a generative AI agent that provides conversational diagnosis support in Hindi, English, and Hinglish. The system includes auto-saved health records and doctor verdict cards with severity ratings.",
+    description: "Problem: Rural areas lack quick, accessible preliminary medical diagnosis.\nSolution: A full-stack health platform featuring a generative AI agent that provides conversational diagnosis support in multiple regional languages.\nImpact: Empowers remote patients to generate auto-saved health records and doctor verdict cards with severity ratings.",
     techStack: ["Next.js 14", "Firebase", "Gemini API", "Vercel"],
     liveUrl: "https://diagnoverseai-peach.vercel.app/",
     githubUrl: "",
@@ -251,7 +248,7 @@ export const projects: Project[] = [
     slug: "trade-track",
     title: "Trade Track",
     category: "Business · FinTech",
-    description: "A comprehensive business dashboard built to replace outdated, manual spreadsheet workflows for small businesses. It streamlines operations by allowing owners to manage revenue, track expenses, and monitor inventory through an intuitive UI/UX with real-time data visualization.",
+    description: "Problem: Small businesses struggle with fragmented, manual spreadsheet workflows.\nSolution: A comprehensive dashboard streamlining operations by allowing owners to manage revenue, track expenses, and monitor inventory.\nImpact: Eliminates manual data entry while providing real-time financial visibility through an intuitive UI/UX.",
     techStack: ["React", "TypeScript", "Tailwind CSS", "Data Viz"],
     liveUrl: "https://trade-track-gilt.vercel.app/",
     githubUrl: "",
@@ -295,7 +292,7 @@ export const projects: Project[] = [
     slug: "edusetu",
     title: "EduSetu",
     category: "EdTech",
-    description: "A digital learning navigator platform designed specifically for secondary students. Its purpose is to eliminate educational friction by providing highly structured academic resources and tailored learning roadmaps.",
+    description: "Problem: Secondary students face educational friction from scattered and unstructured learning materials.\nSolution: A digital learning navigator platform that provides highly structured academic resources and tailored learning roadmaps.\nImpact: Eliminates confusion and accelerates learning through personalized progression tracking.",
     techStack: ["React", "Firebase", "Figma"],
     liveUrl: "",
     githubUrl: "",
@@ -320,7 +317,13 @@ export const certifications: Certification[] = [
     organization: "Google",
     emoji: "🏅",
     badgeColor: "gold",
-    postUrl: "https://linkedin.com/in/krrish-dewangan-ba87282a7",
+  },
+  {
+    id: "google-solution-challenge",
+    name: "Google Solution Challenge 2026",
+    organization: "Google · 2026",
+    emoji: "🌍",
+    badgeColor: "blue",
   },
   {
     id: "claude-101",
@@ -336,7 +339,6 @@ export const certifications: Certification[] = [
       "National Hackathon for Innovation, Design & Entrepreneurship · Mar 2026",
     emoji: "🏆",
     badgeColor: "blue",
-    postUrl: "https://linkedin.com/in/krrish-dewangan-ba87282a7",
   },
   {
     id: "algostorm",
@@ -421,15 +423,33 @@ export const socialLinks: SocialLink[] = [
     icon: "in",
   },
   {
-    label: "Portfolio (old)",
-    href: "https://cyber-bento--dewangankrrish5.replit.app",
-    icon: "◈",
+    label: "Instagram",
+    href: "https://instagram.com/krrish.builds",
+    icon: "ig",
   },
-  { label: "8817975718", href: "tel:8817975718", icon: "☎" },
 ];
 
 // ── Footer ──────────────────────────────────────────────────
 export const footerData = {
-  copyright: "© 2026 Krrish Dewangan. All rights reserved.",
+  copyright: "Built by Krrish Dewangan · 2025–2026",
   location: "Amity University · Raipur, Chhattisgarh · India",
 };
+
+// ── Recognitions ──────────────────────────────────────────────
+export const recognitions: Recognition[] = [
+  {
+    id: "google-ambassador",
+    name: "Google Student Ambassador 2026",
+    organization: "Google",
+  },
+  {
+    id: "algostorm-winner",
+    name: "AlgoStorm 1.0 Winner",
+    organization: "Codician Club",
+  },
+  {
+    id: "ideathon-participant",
+    name: "Ideathon 5.0 Participant",
+    organization: "Kalinga University",
+  },
+];

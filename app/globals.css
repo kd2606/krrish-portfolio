@@ -79,3 +79,7 @@ body {
   51%  { transform: scaleY(1); transform-origin: bottom; }
   100% { transform: scaleY(0); transform-origin: bottom; }
 }
+
+@keyframes shimmer {
+  100% { transform: translateX(100%); }
+}

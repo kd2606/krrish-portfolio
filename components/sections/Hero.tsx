@@ -87,6 +87,20 @@ export default function Hero() {
           </span>
         </h1>
 
+        {/* Currently Building Badge */}
+        {heroData.currentlyBuilding && (
+          <div
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] border border-white/[0.1] font-mono text-[0.75rem] text-white/70 mb-8 overflow-hidden relative"
+            style={{
+              opacity: 0,
+              animation: `fadeUp 0.75s 0.35s ${ease} forwards`,
+            }}
+          >
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/[0.05] to-transparent -translate-x-full animate-[shimmer_2s_infinite]" />
+            {heroData.currentlyBuilding}
+          </div>
+        )}
+
         {/* Subtitle */}
         <p
           className="font-light text-gray-1 mb-12 leading-relaxed"
