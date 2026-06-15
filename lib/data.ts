@@ -236,6 +236,17 @@ export const experiences: Experience[] = [
 
 export const projects: Project[] = [
   {
+    id: "edusetu",
+    slug: "edusetu",
+    title: "EduSetu – Your Learning Navigator",
+    category: "Lead Full-Stack Developer",
+    description: "An AI-powered platform that generates dynamic, node-based visual learning roadmaps for students and developers.\n\nKey Features:\n• Engineered an interactive DAG canvas using React Flow.\n• Integrated Google Gemini via Next.js Edge Routes for real-time text streaming (SSE).\n• Implemented zero-latency Optimistic UI updates with 750ms Supabase debouncing.\n• Built a custom YouTube API caching layer to preserve quotas with a 30-day TTL.",
+    techStack: ["Next.js", "React Flow", "Supabase", "Gemini API", "Tailwind CSS", "Framer Motion"],
+    liveUrl: "https://edusetu-six.vercel.app/",
+    githubUrl: "https://github.com/kd2606/edusetu.git",
+    inDevelopment: false
+  },
+  {
     id: "diagnoverse-ai",
     slug: "diagnoverse-ai",
     title: "DiagnoVerse AI",
@@ -286,17 +297,6 @@ export const projects: Project[] = [
     category: "Safety Tech · Cloud",
     description: "A community safety application engineered to provide real-time emergency responses. It utilizes an AI-based safety scoring algorithm and silent SOS notifications to protect users, powered by a scalable backend architecture.",
     techStack: ["React Native", "GCP", "Supabase", "Gemini AI"],
-    liveUrl: "",
-    githubUrl: "",
-    inDevelopment: true
-  },
-  {
-    id: "edusetu",
-    slug: "edusetu",
-    title: "EduSetu",
-    category: "EdTech",
-    description: "Problem: Secondary students face educational friction from scattered and unstructured learning materials.\nSolution: A digital learning navigator platform that provides highly structured academic resources and tailored learning roadmaps.\nImpact: Eliminates confusion and accelerates learning through personalized progression tracking.",
-    techStack: ["React", "Firebase", "Figma"],
     liveUrl: "",
     githubUrl: "",
     inDevelopment: true

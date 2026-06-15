@@ -53,7 +53,7 @@ export default function Projects() {
                     <h3 className="font-display text-[2rem] font-bold tracking-[-0.02em] mb-4 text-white">
                       {project.title}
                     </h3>
-                    <p className="text-[0.95rem] text-gray-1 leading-[1.6] mb-8 font-light max-w-[90%]">
+                    <p className="text-[0.95rem] text-gray-1 leading-[1.6] mb-8 font-light max-w-[90%] whitespace-pre-line">
                       {project.description}
                     </p>
                   </div>
