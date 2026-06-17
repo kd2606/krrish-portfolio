@@ -4,42 +4,50 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "diagnoverse-ai",
     hero: {
-      title: "DiagnoVerse AI",
-      oneLiner: "An AI-powered full-stack health platform delivering conversational diagnostic support and auto-saving medical records for rural communities.",
-      techStack: ["Next.js 14", "Firebase", "Gemini API", "Vercel"],
+      title: "DiagnoVerse (PulseCheck AI)",
+      oneLiner: "An offline-first, voice-enabled AI triage PWA that works on low-end smartphones, bridging the health gap in rural India.",
+      techStack: ["Next.js", "Tailwind CSS", "IndexedDB", "Firebase", "Genkit", "OpenAI TTS"],
     },
-    overview: "Rural communities often face severe delays in accessing basic healthcare and reliable medical advice. There is a critical need for an accessible, low-friction system that can provide initial diagnostic triage and streamline health data without requiring high-end medical infrastructure.",
+    overview: "To combat the severe lack of accessible healthcare in rural areas, I engineered DiagnoVerse—an offline-first, voice-enabled AI triage platform. By moving heavy data processing client-side and implementing robust synchronization, the application remains functional even in near-zero connectivity zones.",
     myRole: {
-      role: "Team Lead & Full-Stack Developer",
-      scope: "Led the end-to-end MVP development for the NHIDE-2026 hackathon. Engineered the user interface, integrated the Generative AI agents, and architected the real-time database syncing.",
+      role: "Lead Full-Stack Engineer & Founder",
+      scope: "Architected and engineered an offline-first HealthTech Progressive Web App designed to perform AI triage in ultra-low connectivity environments.",
     },
     research: {
-      painPoints: "Language barriers in standard medical applications, risk of losing physical medical records, inability to get immediate understandable answers to sudden health concerns.",
-      marketGap: "Most existing telehealth apps are English-heavy, require complex onboarding, or lack an intelligent conversational agent tailored specifically for accessible, rural-first diagnostic support.",
+      painPoints: "India's rural doctor-to-patient ratio is an alarming 1:10,000. Combined with unstable 2G networks, modern healthcare applications are practically unusable when patients need them most.",
+      marketGap: "Existing telehealth solutions are network-heavy and text-dependent. The market desperately lacks an offline-capable, voice-native platform tailored specifically for low-end devices and low-literacy users.",
     },
     architecture: {
-      tech: "Next.js (Frontend), Firebase (Backend), Gemini API (Core AI Logic), built in Google Antigravity, deployed on Vercel.",
-      reasoning: "Next.js and Vercel provided speed and seamless deployment pipeline for a high-stakes hackathon. Google Antigravity allowed rapid agent-based development crucial for wiring up Gemini API as a reliable specialized health assistant.",
+      tech: "Next.js, IndexedDB, Firebase, Google Genkit (Gemini 1.5 Flash), OpenAI TTS.",
+      reasoning: "An offline-first Progressive Web App (PWA) architecture was chosen to bypass app store friction. IndexedDB and client-side processing ensure core functionality persists offline.",
     },
     keyFeatures: [
       {
-        title: "Pulse AI Health Agent",
-        description: "A multilingual conversational AI designed to process unstructured user health inputs and provide immediate, contextual diagnostic support.",
+        title: "The 10MB Image Bottleneck",
+        description: "Leveraged an off-screen HTML5 <canvas> to compress 8MB clinical photos down to 400KB WebP entirely on the client-side, preventing HTTP 413 timeouts on unreliable 2G networks.",
       },
       {
-        title: "Auto-Saving Health Records",
-        description: "A frictionless UX where session data and medical history are securely and automatically backed up to Firebase without manual saves.",
+        title: "Zero-Connectivity Tolerance",
+        description: "Engineered an IndexedDB asynchronous queue that safely stores analytical payloads offline. Data is dynamically flushed to the server only when the navigator.onLine state fires, indicated by a real-time 'Pending Sync' UI badge.",
       },
+      {
+        title: "AI Clinical Safety Override",
+        description: "Locked the LLM temperature to 0.1 to prevent hallucination. Implemented a regex-based deterministic override—if a user speaks critical keywords like 'chest pain,' the system completely bypasses the AI and mounts an emergency 108 dialer.",
+      },
+      {
+        title: "UX: Clinical Warmth",
+        description: "Transitioned to a strict Dark Mode (bg-[#0B1120]) to eliminate the 'blinding white flash' (FOUC), reducing visual strain for sick/elderly users and ensuring the UI feels like a premium, safe, hospital-grade environment.",
+      }
     ],
     challenges: {
-      bottleneck: "Orchestrating Generative AI agents to process sensitive health data safely and consistently, while ensuring the multilingual conversational flow remained accurate and didn't hallucinate dangerous medical advice.",
-      fix: "Implemented strict system prompts with medical guardrails, structured prompt chaining, and severity rating constraints to keep AI advice safe and constrained.",
+      bottleneck: "Streaming heavy clinical data (high-res images) and ensuring AI safety in environments where internet connectivity drops randomly and medical hallucinations could be fatal.",
+      fix: "Offloaded compression to client-side <canvas>, implemented a bulletproof offline-first IndexedDB queue for network resilience, and hardcoded deterministic regex overrides to instantly halt AI processing during critical emergencies.",
     },
     results: {
-      description: "Successfully delivered a fully functional MVP officially selected for pitching at NHIDE-2026 hackathon. Secured a live Vercel deployment demonstrating real-time AI triage capabilities to judges.",
+      description: "Successfully deployed a full-screen voice call interface optimized for low-literacy users. The platform bridges the gap between rural patients and accessible triage without relying on constant 4G/5G connections.",
       liveUrl: "https://diagnoverseai-peach.vercel.app",
     },
-    learnings: "Gained advanced practical experience in building and deploying LLM-powered applications, orchestrating AI workflows in Google Antigravity, and designing user-centric full-stack healthcare tools for low-resource environments.",
+    learnings: "Phase 2 Roadmap: Transitioning to CDSCO Class B SaMD compliance via immutable SHA-256 server-side audit logging, alongside planned integration with the Ayushman Bharat Digital Mission (ABHA).",
   },
   {
     slug: "trade-track",
