@@ -5,30 +5,34 @@ export const caseStudies: CaseStudy[] = [
     slug: "diagnoverse-ai",
     hero: {
       title: "DiagnoVerse (PulseCheck AI)",
-      oneLiner: "An offline-first, voice-enabled AI triage PWA that works on low-end smartphones, bridging the health gap in rural India.",
-      techStack: ["Next.js", "Tailwind CSS", "IndexedDB", "Firebase", "Genkit", "OpenAI TTS"],
+      oneLiner: "An offline-first, voice-enabled AI triage PWA delivering multilingual diagnostic support for rural communities.",
+      techStack: ["Next.js", "IndexedDB", "Firebase", "Genkit", "OpenAI TTS", "Vercel"],
     },
-    overview: "To combat the severe lack of accessible healthcare in rural areas, I engineered DiagnoVerse—an offline-first, voice-enabled AI triage platform. By moving heavy data processing client-side and implementing robust synchronization, the application remains functional even in near-zero connectivity zones.",
+    overview: "To combat the severe lack of accessible healthcare in rural areas, I engineered DiagnoVerse—an offline-first, voice-enabled AI triage platform. By moving heavy data processing client-side and implementing robust synchronization, the application remains functional even in near-zero connectivity zones, earning it top recognition at the NHIDE-2026 Hackathon.",
     myRole: {
       role: "Lead Full-Stack Engineer & Founder",
-      scope: "Architected and engineered an offline-first HealthTech Progressive Web App designed to perform AI triage in ultra-low connectivity environments.",
+      scope: "Architected and engineered the end-to-end MVP for the NHIDE-2026 hackathon. Designed the offline-first PWA, integrated multilingual Generative AI agents, and built the real-time database syncing.",
     },
     research: {
-      painPoints: "India's rural doctor-to-patient ratio is an alarming 1:10,000. Combined with unstable 2G networks, modern healthcare applications are practically unusable when patients need them most.",
-      marketGap: "Existing telehealth solutions are network-heavy and text-dependent. The market desperately lacks an offline-capable, voice-native platform tailored specifically for low-end devices and low-literacy users.",
+      painPoints: "India's rural doctor-to-patient ratio is an alarming 1:10,000. Combined with language barriers and unstable 2G networks, modern healthcare applications are practically unusable when patients need them most.",
+      marketGap: "Existing telehealth solutions are network-heavy and English-dependent. The market desperately lacks an offline-capable, voice-native platform tailored specifically for low-end devices and low-literacy users.",
     },
     architecture: {
-      tech: "Next.js, IndexedDB, Firebase, Google Genkit (Gemini 1.5 Flash), OpenAI TTS.",
-      reasoning: "An offline-first Progressive Web App (PWA) architecture was chosen to bypass app store friction. IndexedDB and client-side processing ensure core functionality persists offline.",
+      tech: "Next.js, IndexedDB, Firebase, Google Genkit (Gemini 1.5 Flash), built in Google Antigravity.",
+      reasoning: "An offline-first Progressive Web App (PWA) architecture was chosen to bypass app store friction. Google Antigravity allowed rapid agent-based development, crucial for wiring up Gemini API as a reliable health assistant.",
     },
     keyFeatures: [
+      {
+        title: "Pulse AI Health Agent",
+        description: "A multilingual conversational AI designed to process unstructured user health inputs and provide immediate, contextual diagnostic support.",
+      },
       {
         title: "The 10MB Image Bottleneck",
         description: "Leveraged an off-screen HTML5 <canvas> to compress 8MB clinical photos down to 400KB WebP entirely on the client-side, preventing HTTP 413 timeouts on unreliable 2G networks.",
       },
       {
-        title: "Zero-Connectivity Tolerance",
-        description: "Engineered an IndexedDB asynchronous queue that safely stores analytical payloads offline. Data is dynamically flushed to the server only when the navigator.onLine state fires, indicated by a real-time 'Pending Sync' UI badge.",
+        title: "Zero-Connectivity Tolerance & Auto-Saving",
+        description: "Engineered an IndexedDB asynchronous queue that safely stores analytical payloads offline. Data is dynamically flushed to Firebase only when the navigator.onLine state fires, providing frictionless auto-saving for users.",
       },
       {
         title: "AI Clinical Safety Override",
@@ -40,14 +44,14 @@ export const caseStudies: CaseStudy[] = [
       }
     ],
     challenges: {
-      bottleneck: "Streaming heavy clinical data (high-res images) and ensuring AI safety in environments where internet connectivity drops randomly and medical hallucinations could be fatal.",
+      bottleneck: "Orchestrating Generative AI agents to process sensitive health data safely, while streaming heavy clinical images in environments where internet connectivity drops randomly and medical hallucinations could be fatal.",
       fix: "Offloaded compression to client-side <canvas>, implemented a bulletproof offline-first IndexedDB queue for network resilience, and hardcoded deterministic regex overrides to instantly halt AI processing during critical emergencies.",
     },
     results: {
-      description: "Successfully deployed a full-screen voice call interface optimized for low-literacy users. The platform bridges the gap between rural patients and accessible triage without relying on constant 4G/5G connections.",
+      description: "Successfully delivered a fully functional MVP officially selected for pitching at NHIDE-2026 hackathon. The platform bridges the gap between rural patients and accessible triage without relying on constant 4G/5G connections.",
       liveUrl: "https://diagnoverseai-peach.vercel.app",
     },
-    learnings: "Phase 2 Roadmap: Transitioning to CDSCO Class B SaMD compliance via immutable SHA-256 server-side audit logging, alongside planned integration with the Ayushman Bharat Digital Mission (ABHA).",
+    learnings: "Gained advanced practical experience orchestrating AI workflows in Google Antigravity. Phase 2 Roadmap: Transitioning to CDSCO Class B SaMD compliance via immutable SHA-256 server-side audit logging, alongside planned integration with the Ayushman Bharat Digital Mission (ABHA).",
   },
   {
     slug: "trade-track",
